@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registrasi</title>
+  <style> 
+   * {
+     margin: 0px; 
+     padding: 0px;
+   }
+   body {
+     background-image: url('/img/background7.jpg');
+     color: white; 
+     font-family: Sans-Serif;
+     
+     display: flex; 
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center;
+     min-height: 100vh;
+   }
+   form {
+     background-color: transparent;
+     width: 350px; 
+     border-radius: 15px;
+     height: auto; 
+     padding: 20px;
+     backdrop-filter: blur(8px); 
+     color: white;
+     border: 1px solid white;
+   }
+   input[type="text"] {
+     width: 49%;
+     padding: 10px; 
+     margin-top: 15px; 
+     box-sizing: border-box;
+   }
+   input[type="email"], input[type="password"] {
+     width: 100%;
+     padding: 10px;
+     margin-top: 15px;
+     box-sizing: border-box;
+   }
+   input {
+     background-color: transparent;
+     border: 1px solid white;
+     border-radius: 10px;
+     outline: none;
+   }
+   input::placeholder {
+     color: white;
+   }
+   button {
+     width: 30%;
+     margin: auto;
+     padding: 5px;
+     
+     display: flex;
+     justify-content: center;
+     margin-top: 15px;
+     background-color: transparent;
+     border: 1px solid white;
+     border-radius: 10px;
+     color: white;
+     
+     transition: all 0.3s ease;
+   }
+   button:hover {
+     transform: translateY(3px);
+   }
+   h2 {
+     font-weight: bold;
+     text-align: center;
+   }
+   .back {
+     color: red;
+     border-bottom: 1px solid red;
+     font-size: 10px;
+   }
+  </style>
+</head>
+<body>
+<form>
+   <h2><u>Registrasi</u></h2>
+   <input type="text" id="usn1" placeholder="Nama Depan">
+   <input type="text" id="usn2" placeholder="Nama Belakang">
+   <input type="Email" id="email" placeholder="user@gmail.com">
+   <input type="password" id="pw1" placeholder="Password Kuat">
+   <input type="password" id="pw2" placeholder="Password Ulang">
+   
+   <button type="submit">daftar</button>
+   
+      <a class="back"href="project5.html"><small>Back To Main Menu</small></a>
+</form>
+</body>
+</html>
